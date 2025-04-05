@@ -4,6 +4,7 @@ from django.db import models
 
 class StatusModel(models.Model):
     name = models.CharField(max_length = 100)
+    name1 = models.CharField(max_length = 100)
     description = models.TextField()
     create_on = models.DateTimeField(auto_now_add = True)
     last_modified = models.DateTimeField(auto_now = True)
